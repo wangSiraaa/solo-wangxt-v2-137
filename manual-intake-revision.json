@@ -1,0 +1,75 @@
+{
+  "project": 137,
+  "project_dir": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137",
+  "prompt_file": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/task/prompt-from-traces.txt",
+  "initial_sha": "0b3cdee45242e6cb0aa197ddf0d7d6abf142948a",
+  "harness_version": "2.1.197",
+  "task_type": "0→1",
+  "task_type_evidence": "task/preparation.json declares 0→1 and baseline C0 has no business source files; both A/B traces implement a new sensor-tsdb crate from the empty baseline.",
+  "difficulty": "困难",
+  "languages": "Rust, Axum, SQLite",
+  "environment_reproducibility": "Rust toolchain was installed/used inside each recorded isolated run; startup metadata records the same image, machine, initial SHA, and harness version for both sides.",
+  "A": {
+    "workspace": "/tmp/solo-137-A-prep.0ohD3Y",
+    "trace": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/A/traces/-workspace/27dbebdd-06a7-4e7e-88b9-ba214e8893d3.jsonl",
+    "trace_root": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/A/traces",
+    "session_id": "27dbebdd-06a7-4e7e-88b9-ba214e8893d3",
+    "run_conditions": {
+      "initial_sha": "0b3cdee45242e6cb0aa197ddf0d7d6abf142948a",
+      "image_id": "sha256:f77014d9e56cd3db2ac96627a286814cb1aa9f0b4bb807bea98a01383c9bc4d8",
+      "model": "auto_model/urm",
+      "context": 1000000,
+      "machine": "aaa748b5330f82aa10dcf18ab215b496b56c2ccf040d4aca322ea1ac4cb31de6",
+      "os": "macOS-26.4.1-arm64-arm-64bit",
+      "harness_version": "2.1.197",
+      "reset": true,
+      "source": "recorded",
+      "evidence": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/A/logs/manual-start-20261005T235849-5e402b8d/startup.json"
+    }
+  },
+  "B": {
+    "workspace": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/B/workspace",
+    "trace": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/B/traces/-workspace/68404cda-c971-454e-8c66-1a563dc79f8f.jsonl",
+    "trace_root": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/B/traces",
+    "session_id": "68404cda-c971-454e-8c66-1a563dc79f8f",
+    "run_conditions": {
+      "initial_sha": "0b3cdee45242e6cb0aa197ddf0d7d6abf142948a",
+      "image_id": "sha256:f77014d9e56cd3db2ac96627a286814cb1aa9f0b4bb807bea98a01383c9bc4d8",
+      "model": "auto_model/urm",
+      "context": 1000000,
+      "machine": "aaa748b5330f82aa10dcf18ab215b496b56c2ccf040d4aca322ea1ac4cb31de6",
+      "os": "macOS-26.4.1-arm64-arm-64bit",
+      "harness_version": "2.1.197",
+      "reset": true,
+      "source": "recorded",
+      "evidence": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/B/logs/manual-start-20261006T013821-755b0220/startup.json"
+    }
+  },
+  "intake_revision": "A publication-prep copy excludes recorded Rust target build cache and adds packaging-only ignore rule; explicit recorded run conditions",
+  "run_conditions": {
+    "A": {
+      "initial_sha": "0b3cdee45242e6cb0aa197ddf0d7d6abf142948a",
+      "image_id": "sha256:f77014d9e56cd3db2ac96627a286814cb1aa9f0b4bb807bea98a01383c9bc4d8",
+      "model": "auto_model/urm",
+      "context": 1000000,
+      "machine": "aaa748b5330f82aa10dcf18ab215b496b56c2ccf040d4aca322ea1ac4cb31de6",
+      "os": "macOS-26.4.1-arm64-arm-64bit",
+      "harness_version": "2.1.197",
+      "reset": true,
+      "source": "recorded",
+      "evidence": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/A/logs/manual-start-20261005T235849-5e402b8d/startup.json"
+    },
+    "B": {
+      "initial_sha": "0b3cdee45242e6cb0aa197ddf0d7d6abf142948a",
+      "image_id": "sha256:f77014d9e56cd3db2ac96627a286814cb1aa9f0b4bb807bea98a01383c9bc4d8",
+      "model": "auto_model/urm",
+      "context": 1000000,
+      "machine": "aaa748b5330f82aa10dcf18ab215b496b56c2ccf040d4aca322ea1ac4cb31de6",
+      "os": "macOS-26.4.1-arm64-arm-64bit",
+      "harness_version": "2.1.197",
+      "reset": true,
+      "source": "recorded",
+      "evidence": "/Users/mingyuan/workspace/sihuo/solo-pairwise/137/B/logs/manual-start-20261006T013821-755b0220/startup.json"
+    }
+  }
+}
