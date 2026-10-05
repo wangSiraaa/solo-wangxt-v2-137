@@ -23,3 +23,11 @@ venv/
 __pycache__/
 .pytest_cache/
 .DS_Store
+
+# Rust
+/target
+
+# local data
+sensor-data/
+*.seg
+*.seg.tmp

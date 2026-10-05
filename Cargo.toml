@@ -1,0 +1,30 @@
+[package]
+name = "sensor-segments"
+version = "0.1.0"
+edition = "2021"
+description = "High-frequency sensor time-series: immutable local segments with XOR compression and indexed range queries"
+
+[lib]
+name = "sensor_segments"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sensor-segments"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "sync"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+tower = "0.4"
+
+[dev-dependencies]
+tower = { version = "0.4", features = ["util"] }
+http-body-util = "0.1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+
+[profile.release]
+lto = "thin"
